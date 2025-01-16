@@ -1,6 +1,9 @@
 package com.example.android_java_learning_application;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +24,13 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-
+        Button toastButton = findViewById(R.id.buttonToast);
+        toastButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"Hi this is toast from java application",Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 }
