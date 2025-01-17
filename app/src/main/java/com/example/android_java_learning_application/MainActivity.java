@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        //get button from view and show toast message on button click
         Button toastButton = findViewById(R.id.buttonShowToast);
         toastButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+         //get button from view and implement explicit intent on button click
         Button showExplicitIntentButton = findViewById(R.id.buttonShowExplicitActivity);
         showExplicitIntentButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //get button from view and implement implicit intent on button click
         Button showImplicitIntentButton = findViewById(R.id.buttonShowImplicitActivity);
         showImplicitIntentButton.setOnClickListener(new View.OnClickListener() {
             @Override
