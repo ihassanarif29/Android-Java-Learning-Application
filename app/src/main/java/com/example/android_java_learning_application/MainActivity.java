@@ -1,5 +1,7 @@
 package com.example.android_java_learning_application;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,11 +26,31 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button toastButton = findViewById(R.id.buttonToast);
+        Button toastButton = findViewById(R.id.buttonShowToast);
         toastButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,"Hi this is toast from java application",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        Button showExplicitIntentButton = findViewById(R.id.buttonShowExplicitActivity);
+        showExplicitIntentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button showImplicitIntentButton = findViewById(R.id.buttonShowImplicitActivity);
+        showImplicitIntentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.google.com"));
+                startActivity(intent);
             }
         });
 

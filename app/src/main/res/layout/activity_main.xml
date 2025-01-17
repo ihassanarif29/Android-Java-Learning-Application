@@ -10,9 +10,23 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonToast"
+        android:id="@+id/buttonShowToast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/show_toast_button" />
+
+    <Button
+        android:id="@+id/buttonShowExplicitActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_Explicit_Intent_button" />
+
+    <Button
+        android:id="@+id/buttonShowImplicitActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_Implicit_Intent_button" />
+
+
 
 </LinearLayout>

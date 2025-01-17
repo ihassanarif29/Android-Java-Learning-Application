@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Android Java Learning Application</string>
     <string name="show_toast_button">Show Toast</string>
+    <string name="show_Implicit_Intent_button">Show Implicit Intent</string>
+    <string name="show_Explicit_Intent_button">Show Explicit Intent</string>
+    <string name="text_view_new_activity">Welcome to New Activity</string>
 </resources>
