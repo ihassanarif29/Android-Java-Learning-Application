@@ -13,19 +13,37 @@
         android:id="@+id/buttonShowToast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"
         android:text="@string/show_toast_button" />
 
     <Button
         android:id="@+id/buttonShowExplicitActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
         android:text="@string/show_Explicit_Intent_button" />
 
     <Button
         android:id="@+id/buttonShowImplicitActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
         android:text="@string/show_Implicit_Intent_button" />
+
+    <Button
+        android:id="@+id/buttonShowWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="@string/show_web_view_button" />
+
+    <Button
+        android:id="@+id/buttonShowDialogue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="@string/show_dialogue_button" />
 
 
 

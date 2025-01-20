@@ -56,5 +56,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        //get button from view and implement implicit intent on button click
+        Button showWebViewButton = findViewById(R.id.buttonShowWebView);
+        showWebViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
