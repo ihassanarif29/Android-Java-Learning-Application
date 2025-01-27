@@ -56,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button showDataTransferExampleButton = findViewById(R.id.buttonShowDataTransferExample);
+        showDataTransferExampleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,DataTransferExampleActivity.class);
+                startActivity(intent);
+            }
+        });
 
         //get button from view and implement implicit intent on button click
         Button showWebViewButton = findViewById(R.id.buttonShowWebView);
@@ -67,5 +75,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }
