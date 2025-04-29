@@ -6,6 +6,8 @@
     <string name="show_Implicit_Intent_button">Show Implicit Intent</string>
     <string name="show_Explicit_Intent_button">Show Explicit Intent</string>
     <string name="show_data_transfer_example_button">Show Data Transfer From One Screen To Other</string>
+    <string name="show_Bluetooth_Example_button">Bluetooth Example</string>
+    <string name="bluetooth_On_Off_button">Bluetooth On Off</string>
     <string name="text_view_new_activity">Welcome to New Activity</string>
     <string name="splash_loading_text">Loading...</string>
 </resources>

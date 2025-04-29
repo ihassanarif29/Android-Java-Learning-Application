@@ -1,19 +1,28 @@
 package com.example.android_java_learning_application;
 
+import android.Manifest;
 import android.content.Intent;
+import android.bluetooth.BluetoothAdapter;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
 
         //get button from view and show toast message on button click
         Button toastButton = findViewById(R.id.buttonShowToast);
@@ -75,7 +85,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //get button from view and implement implicit intent on button click
+        Button showBluetoothExampleButton = findViewById(R.id.buttonShowBluetoothExample);
+        showBluetoothExampleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BluetoothExampleActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
+
 
     @Override
     protected void onStart() {
